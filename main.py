@@ -29,7 +29,7 @@ MODEL = tf.keras.models.load_model("models/1")
 CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 @app.get("/")
 async def  root():
-     return {"Message": "backend is runnig here for my ml project"}
+     return "backend is runnig here for my ml project"
 @app.get("/ping")
 async def ping():
     return "Hello, I am alive"
